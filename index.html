@@ -11,6 +11,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/fontawesome/css/font-awesome.min.css">
+		
+
 		
 		
 		
@@ -80,7 +83,7 @@
 			</section>
 
 		<!-- We -->
-		<section id="we">
+		<section id="us">
 			<div class="inner">
 				
 					<h3>Nosotros</h3>
@@ -126,40 +129,30 @@
 			</section>
 
 		<!-- Videos -->
-			<section id="videos">
+			<section id="videos" class="wrapper align-center">
 				<div class="inner">
 					<h3>Sobre las Criptomonedas</h3>
 					
-					<h4>¿Qué es una criptomoneda?</h4>
-						<div class="videos videoWrapper">
-							
-							<video src="videos/Introductorio Basico.mp4" controls></video>
-						</div>
-						<h4>¿Cómo minar una criptomoneda?</h4>
-						<div class="videos videoWrapper" id="videoCryptocurrency">
-							<video src="videos/Introductorio Mineria.mp4" controls></video>
-						</div>
-					
-				</div>
-
-				<div class="cardContainer">
-						<div class="mmCard shadow4a bWhite">
-						  <video class="mmCardVid" controls>
-							  <source  src="videos/Introductorio Basico.mp4" type="video/mp4">
-							  Contenido no soportado por el navegador.
-						  </video>
-						  <h3>¿Qué es una criptomoneda?</h3>
-						  
-						</div>
-					  
-						<div class="mmCard shadow4a bWhite">
+					<div class="cardContainer">
+						<div class="mmCard shadow4a bWhite" id="videoOne">
+							<h3>¿Qué es una criptomoneda?</h3>
 								<video class="mmCardVid" controls>
-										<source  src="videos/Introductorio Mineria.mp4" type="video/mp4">
-											Contenido no soportado por el navegador.
+									<source  src="videos/Introductorio Basico.mp4" type="video/mp4">
+										Contenido no soportado por el navegador.
 								</video>
-								  <h3>¿Cómo minar una criptomoneda?</h3>
-						  
+															
 						</div>
+							
+						<div class="mmCard shadow4a bWhite" id="videoTwo">
+							<h3>¿Cómo minar una criptomoneda?</h3>
+								<video class="mmCardVid" controls>
+									<source  src="videos/Introductorio Mineria.mp4" type="video/mp4">
+												Contenido no soportado por el navegador.
+								</video>
+									
+						</div>	
+					</div>
+						
 				</div>
 			</section>
 		
@@ -169,7 +162,7 @@
 
 				  
 		<!-- Benefits -->
-			<section id="benefits">
+			<section id="benefits" class="wrapper align-center">
 				<div class="inner">
 					<h3>Beneficios y características</h3>
 					<div id="benefitsRowOne">
@@ -209,6 +202,8 @@
 				<div class="inner">
 
 					<h3>Contáctanos</h3>
+					<p>Si te interesa saber más información sobre criptomonedas o formar parte de nuestra red de
+							comercios afiliados, ¡contáctanos!</p>
 					<div id="sendmessage"></div>
 					<div id="errormessage"></div>
 					<form id="sendMessageForm" action="/api/sendMail" method="post">
@@ -232,13 +227,13 @@
 							<li><input value="Enviar mensaje" class="button alt" type="submit"></li>
 						</ul>
 					</form>
-					<hr>
+					
 					<div class="grid-item">
 							
 								<div class="grid-container listFooter">
 									
 										<ul id="listFooter">
-											<h4>VEINTE</h4>
+											<img src="images/VEINTE_IC_WHITE.png" alt="veinte" class="responsive">
 											<a href="index.html"><li>Home</li></a>
 											<a href="#we"><li>Nosotros</li></a>
 											<a href="#videos"><li>Sobre las criptomonedas</li></a>
@@ -246,25 +241,32 @@
 											<a href="#footer"><li>Contacto</li></a>
 										</ul>
 										
+										<div id="address">
+											<h5>DIRECCIÓN</h5>
+											<p>Av. Francisco De Miranda con cruce  Av. Los Cortijos, Edif. Torre Europa, Piso PB, Local N°1, Urb. Campo Alegre, Caracas (Chacao), Estado Miranda, Zona Postal 1060.</p>
+										</div>
+
 										<div id="socials">
 											
 											<ul>
-												<h4>REDES</h4>
+												<h5>REDES</h5>
 												<p>Seguinos en: </p>
-												<a href="https://twitter.com/?lang=es"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-												<a href="https://es-la.facebook.com/"><i class="fa fa-facebook-square" aria-hidden="true"></i>
+												<a href="https://www.instagram.com/veinte-ven"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+												<a href="https://twitter.com/veinte-ven"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+												<a href="https://es-la.facebook.com/veinte-ven"><i class="fa fa-facebook-square" aria-hidden="true"></i>
 												</a>
-												<a href="https://www.instagram.com/?hl=es-la"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+												
 												<p>@veinte-ven</p>
 											</ul>
 										</div>
+										
 										
 										
 								</div>
 							
 					</div>
 							
-
+					
 
 
 
@@ -282,25 +284,13 @@
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/mailform.js"></script>
 			<script src="assets/js/subscribe.js"></script>
-			<script src="assets/js/sss.min.js"></script>
-			
-		
-	<script>
-	$(document).ready(function() {
-	$('.fancybox').fancybox({
-	  padding   : 0,
-	  maxWidth  : '100%',
-	  maxHeight : '100%',
-	  width   : 560,
-	  height    : 315,
-	  autoSize  : true,
-	  closeClick  : true,
-	  openEffect  : 'elastic',
-	  closeEffect : 'elastic'
-	});
-  });
+			<script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+		ScrollReveal({ reset: true });
+		ScrollReveal().reveal('.inner', { delay: 400 });
 
-	</script>
+    </script>
+	
 			
 	</body>
 </html>
