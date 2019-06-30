@@ -22,21 +22,36 @@
 	<body>
 
 		<!-- Header -->
-			<header id="header">
+		<header id="header">
+			<div id="fixed">
+				<a href="index.html"><img id="logo" src="./images/VEINTE_IC.png"></a>
+				<nav class="right" id="nav">
+					<a class="uppercase" href="index.html">Iniciar sesion / Registrarse </a>
+					<a class="uppercase" href="#us">Nosotros</a>
+					<a class="uppercase" href="#videos">Criptomonedas</a>
+					<a class="uppercase" href="#footer">Contactanos</a>
+					
+					<!-- <a href="generic.html">Generic</a> -->
+					<!-- <a href="elements.html">Elements</a> -->
+				</nav>
+				<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span><img src="./images/VEINTE_IC.png" id="logoResponsive"></a>
+			</div>
+		</header>
+		<!--	<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo"><img src="./images/VEINTE_IC_WHITE.png"></a>
-					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="#we">Nosotros</a>
-						<a href="#videos">Sobre las criptomonedas</a>
-						<a href="#benefits">Beneficios</a>
-						<a href="#footer">Contacto</a>
+					<a href="index.html" class="logo"><img id="logo" src="./images/VEINTE_IC.png"></a>
+					<nav class="right" id="nav">
+						<a class="uppercase" href="index.html">Iniciar sesion / Registrarse </a>
+						<a class="uppercase" href="#us">Nosotros</a>
+						<a class="uppercase" href="#videos">Criptomonedas</a>
+						<a class="uppercase" href="#footer">Contactanos</a> -->
 						<!-- <a href="generic.html">Generic</a> -->
 						<!-- <a href="elements.html">Elements</a> -->
-					</nav>
-					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+			<!--		</nav>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span><h3 id="logoResponsive">Veinte</h3></a>
+					
 				</div>
-			</header>
+			</header> -->
 
 		<!-- Banner -->
 			<section id="banner">
@@ -84,19 +99,47 @@
 
 		<!-- We -->
 		<section id="us">
-			<div class="inner">
+			<div class="inner godown">
 				
-					<h3>Nosotros</h3>
-					<p>Tenemos más de 7 años de experiencia en el mundo de las criptomonedas, estamos acá para darte
+					<h3 class="uppercase">Nosotros</h3>
+					<p id="pUs">Tenemos más de 7 años de experiencia en el mundo de las criptomonedas, estamos acá para darte
 						los mejores aspectos de la tecnología que rompe los esquemas de economía actuales, de la manera
 						más sencilla y segura posible.</p>
+
+						<div id="benefits">
+							<div class="item">
+								<img class="imageBenefits" src="icons/hyperledger.png"/>
+								<p>Integración total con las más útiles y populares criptomonedas.</p>
+							</div>
+							<div class="item">
+								<img class="imageBenefits" src="icons/eth.png"/>
+								<p>Usamos tecnología distribuida en todos nuestros procesos, garantizando la seguridad de tu información.</p>
+							</div>
+							<div class="item">
+								<img class="imageBenefits" src="icons/downloadfast.png"/>
+								<p>Es fácil! te registras, te verificas y ya accedes al mercado mundial de criptomonedas.</p>
+							</div>
+							<div class="item">
+								<img class="imageBenefits" src="icons/time.png"/>
+								<p>Procesamos todas las operaciones en menos de VEINTE minutos..</p>
+							</div>
+							<div class="item">
+								<img class="imageBenefits"src="icons/nofee.png"/>
+									<p>No tenemos comisiones ocultas, pagas lo que ves.</p> 
+							</div>
+							<div class="item">
+								<img class="imageBenefits" src="icons/bestprice.png"/>
+								<p>Tenemos el precio más competitivo, en tiempo real.</p>
+							</div>
+						</div>
 				
 			</div>
 		</section>
 
 
-
-		<!-- Three -->
+		<!--Three -->
+ 				
+		<!-- 
 			<section id="three" class="wrapper align-center">
 				<div class="inner">
 					<div class="flex flex-2">
@@ -127,11 +170,12 @@
 					</div>
 				</div>
 			</section>
+		-->
 
 		<!-- Videos -->
 			<section id="videos" class="wrapper align-center">
-				<div class="inner">
-					<h3>Sobre las Criptomonedas</h3>
+				<div class="inner godown">
+					<h3 class="uppercase">Criptomonedas</h3>
 					
 					<div class="cardContainer">
 						<div class="mmCard shadow4a bWhite" id="videoOne">
@@ -160,48 +204,14 @@
 
 
 
-				  
-		<!-- Benefits -->
-			<section id="benefits" class="wrapper align-center">
-				<div class="inner">
-					<h3>Beneficios y características</h3>
-					<div id="benefitsRowOne">
-						<div class="item">
-							<i class="fa fa-arrow-circle-o-right fa-decoration circle-icon" aria-hidden="true"></i>
-							<p>Integración total con las más útiles y populares criptomonedas.</p>
-						</div>
-						<div class="item">
-							<i class="fa fa-desktop fa-decoration circle-icon" aria-hidden="true"></i>
-							
-							<p>Usamos la tecnología distribuida en aspectos críticos como datos personales y gestión de
-								fondos, no solo las comerciarás, usaras sus ventajas criptográficas sin notarlo.</p>
-						</div>
-						<div class="item">
-							
-							<i class="fa fa-money fa-decoration circle-icon" aria-hidden="true"></i>
-							<p>Te registras, depositas y retiras.</p>
-						</div>
-					</div>
-					<div id="benefitsRowTwo">
-						<div class="item" id="item-4">
-							<i class="fa fa-calendar-check-o fa-decoration circle-icon" aria-hidden="true"></i>
-							<p>Sin comisiones ocultas y sin demoras.</p>
-						</div>
-						<div class="item" id="item-5">
-								<i class="fa fa-usd fa-decoration circle-icon" aria-hidden="true"></i>
-
-							<p>Nos esforzamos por darte el precio más competitivo y actualizado minuto a minuto.</p> 
-						</div>
-					</div>
-				</div>
-			</section>
+	
 
 
 		<!-- Footer -->
 			<footer id="footer">
-				<div class="inner">
+				<div class="inner godown">
 
-					<h3>Contáctanos</h3>
+					<h3 class="uppercase">Contactanos</h3>
 					<p>Si te interesa saber más información sobre criptomonedas o formar parte de nuestra red de
 							comercios afiliados, ¡contáctanos!</p>
 					<div id="sendmessage"></div>
@@ -227,6 +237,15 @@
 							<li><input value="Enviar mensaje" class="button alt" type="submit"></li>
 						</ul>
 					</form>
+
+
+					<div id="address">
+						<h4 class="uppercase">Direccion</h4>
+						<p>Av. Francisco De Miranda con cruce  Av. Los Cortijos, Edif. Torre Europa, Piso PB, Local N°1, Urb. Campo Alegre, Caracas (Chacao), Estado Miranda, Zona Postal 1060.</p>
+						<div class="map-responsive">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.120659677585!2d-66.86669518520172!3d10.4911534925155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c2a58fdab459707%3A0x1b3efc1560fe5f87!2sAvenida+Francisco+de+Miranda+%26+Avenida+Los+Cortijos%2C+Caracas+1060%2C+Miranda%2C+Venezuela!5e0!3m2!1ses!2sar!4v1561748984010!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+						</div>
+					</div>
 					
 					<div class="grid-item">
 							
@@ -234,22 +253,19 @@
 									
 										<ul id="listFooter">
 											<img src="images/VEINTE_IC_WHITE.png" alt="veinte" class="responsive">
-											<a href="index.html"><li>Home</li></a>
-											<a href="#we"><li>Nosotros</li></a>
-											<a href="#videos"><li>Sobre las criptomonedas</li></a>
-											<a href="#benefits"><li>Beneficios</li></a>
-											<a href="#footer"><li>Contacto</li></a>
+											<a class="uppercase" href="index.html"><li>Home</li></a>
+											<a class="uppercase" href="#we"><li>Nosotros</li></a>
+											<a class="uppercase" href="#videos"><li>Sobre las criptomonedas</li></a>
+											<a class="uppercase" href="#benefits"><li>Beneficios</li></a>
+											<a class="uppercase" href="#footer"><li>Contacto</li></a>
 										</ul>
 										
-										<div id="address">
-											<h5>DIRECCIÓN</h5>
-											<p>Av. Francisco De Miranda con cruce  Av. Los Cortijos, Edif. Torre Europa, Piso PB, Local N°1, Urb. Campo Alegre, Caracas (Chacao), Estado Miranda, Zona Postal 1060.</p>
-										</div>
+										
 
 										<div id="socials">
 											
 											<ul>
-												<h5>REDES</h5>
+												<h5 class="uppercase">Redes</h5>
 												<p>Seguinos en: </p>
 												<a href="https://www.instagram.com/veinte-ven"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 												<a href="https://twitter.com/veinte-ven"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -279,7 +295,7 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/skel.min.js"></script> 
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="assets/js/mailform.js"></script>
@@ -289,6 +305,7 @@
 		ScrollReveal({ reset: true });
 		ScrollReveal().reveal('.inner', { delay: 400 });
 
+		
     </script>
 	
 			

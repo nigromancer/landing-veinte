@@ -67,6 +67,9 @@
 })(jQuery);
 
 
+
+
+/* Effects */ 
 $("a").on("mouseover", function() {
     $(this).css("color", "grey");
 }).on("mouseout", function() {
@@ -88,3 +91,6 @@ $("a>i").on("mouseover", function() {
 
 
 
+$("a.uppercase").on("click", function() {
+    $("h3.uppercase").css("padding-top", "2.5em");
+});
