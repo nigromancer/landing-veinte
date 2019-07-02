@@ -55,6 +55,7 @@
 					resetForms: true,
 					side: 'left'
 				});
+				
 
 		// Fix: Remove transitions on WP<10 (poor/buggy performance).
 			if (skel.vars.os == 'wp' && skel.vars.osVersion < 10)
@@ -64,3 +65,32 @@
 	});
 
 })(jQuery);
+
+
+
+
+/* Effects */ 
+$("a").on("mouseover", function() {
+    $(this).css("color", "grey");
+}).on("mouseout", function() {
+      $(this).css("color", "white");
+});
+
+$("a>li").on("mouseover", function() {
+    $(this).css("color", "grey");
+}).on("mouseout", function() {
+      $(this).css("color", "white");
+});
+
+
+$("a>i").on("mouseover", function() {
+    $(this).css("color", "grey");
+}).on("mouseout", function() {
+      $(this).css("color", "white");
+});
+
+
+
+$("a.uppercase").on("click", function() {
+    $("h3.uppercase").css("padding-top", "2.5em");
+});
