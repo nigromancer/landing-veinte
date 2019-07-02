@@ -3784,3 +3784,8 @@ div#address{
 	margin: 0 auto;
 	padding-top: 20px;
 }
+
+#header .disabled {
+	color: gray;
+	cursor: default;
+}

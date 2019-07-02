@@ -89,6 +89,12 @@ $("a>i").on("mouseover", function() {
       $(this).css("color", "white");
 });
 
+$("a.uppercase.disabled").on("mouseover", function() {
+	$(this).css("color", "grey");
+}).on("mouseout", function() {
+		$(this).css("color", "grey");
+});
+
 
 
 $("a.uppercase").on("click", function() {
