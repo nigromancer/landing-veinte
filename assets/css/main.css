@@ -3288,7 +3288,7 @@ h4.uppercase {
 	
 	position: fixed;
 	/*background-color: #000;*/
-	background-image: url(../../images/background.jpg);
+	background-image: linear-gradient(to bottom, #003b57, #003b574f);
 	z-index: 10000;
 	left: 0;
 	top: 0;
@@ -3304,7 +3304,6 @@ h4.uppercase {
 
 #fixed:before {
 	content: '';
-	background: #003b57cf;
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -3365,6 +3364,11 @@ h4.uppercase {
 	padding-bottom: 1em;
 }
 
+#header a {
+	letter-spacing: 1px;
+	font-size: 0.9em;
+}
+
 #header a.navPanelToggle {
 	position: fixed;
 	background-color: rgb(0,105,143);
@@ -3381,7 +3385,7 @@ span.fa.fa-bars{
 }
 
 #header a.navPanelToggle .fa {
-	float: left;
+	float: right;
 }
 
 #logoResponsive {
@@ -3553,7 +3557,7 @@ img.fa-decoration.circle-icon {
 /* Footer List */
 
 .responsive {
-	width: 40%;
+	width: 100%;
 	height: auto;
 	padding-bottom: 0.5em;
 	
@@ -3573,7 +3577,7 @@ ul.actions {
 
  div.grid-container.listFooter {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.8fr 2fr 0.8fr;
     grid-template-areas: 
 	"a b";
 	padding-top: 3em;
@@ -3647,7 +3651,7 @@ a>i:hover {
 }
 
 div#address{
-	padding-bottom: 3em;
+	/* padding-bottom: 3em; */
 }
 
 .map-responsive{
@@ -3728,6 +3732,13 @@ div#address{
 		display: none;
 	}
 
+	.responsive {
+		width: 70%;
+	}
+
+	.map-responsive {
+		height: 300px;
+	}
 	
 
 	a.navPanelToggle {
@@ -3754,5 +3765,22 @@ div#address{
 	.fa-bars, #logoResponsive {
 		z-index: 10000;
 	}
+
+	#logoResponsive {
+		float: left;
+	}
 }
 
+#socials ul {
+	display: grid;
+}
+
+#socials p {
+	padding: 0 40px 0 40px;
+}
+
+#address p {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 20px;
+}
